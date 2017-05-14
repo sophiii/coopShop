@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <script src="bundle.js"> </script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.2.3/milligram.min.css">
+  </head>
+  <body class="container" style="padding-top: 3%;">
+    <h2><a href="index.html">CoopShop</a></h2>
+    <h4>Ethereum Purchaseing Cooperative</h4>
+    <hr />
+        <button id="placeOrder"> Place Order </button>
+        <button id="placeDesign">Add Design</button>
+        <button id="showOrders">Show Orders</button>
+
+        <div id="response" style="padding: 20px; border: 1px solid #9b4dca; word-wrap: break-word">
+          Deploying your contract...
+        </div>
+    <div class="row", id="designs", style=none>
+    <div class="column column-40">      
+      </div>
+    </div>
+    <div class = "row", id="images", style=none>
+        <input type="image" alt="Click To Cycle Through Designs" style="width:304px;height:228px;" id="design_display", class="picture">
+    </div>
+
+    <div class="row", id="order", style=none>
+      <div class="column column-60">
+
+
+        <label>Amount in Ether</label>
+        <input id="valueAmount" type="number" placeholder="i.e. 4500" />
+
+        <label>Address</label>
+        <input id="address" type="text" placeholder="Delivery address, this will be encrypted on the block chain" />
+
+        <label>Quantity</label>
+        <input id="quantity" type="number"/>
+
+        <label>T-shirt</label>
+        <input id="hash" type="text" placeholder="i.e. 4500" />
+
+        <label>Size</label>
+        <input id="size" type="text" placeholder="S, M ,L" />
+
+        <button id="setOrder">Set Order</button>
+      </div>
+
+    </div>
+
+    <div class="row", id="design", style=none>
+      <div class="column column-60">
+
+        <label>Design</label>
+        <input type="file" id="design_file">
+
+        <label>Benificiary</label>
+        <input id="benificiary" type="text" placeholder="this address recvs 9% of the sales" />
+
+        <button id="addDesign">Set Order</button>
+      </div>
+    </div>
+
+
+    <div class="row", id="GetOrders", style=none>
+      <div class="column column-60">
+      <table style="width:100%", id="OrderTable">
+
+     </table> 
+      </div>
+    </div>
+
+
+  </body>
+</html>
