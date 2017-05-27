@@ -1,15 +1,11 @@
 ## CoopShop: Ethereum Based Purchaseing Cooperative
 
 ## Dapp
-http://ropsten-coopshop.netlify.com
-You must start geth to allow cross domain request 
-`geth --rpc --rpccorsdomain "http://http://ropsten-coopshop.netlify.com/"`
-Or else use metamast/mist.
+https://sophiii.github.com use metamask on ropsten
 
 ##Running local version:
 start webserver: `cd app` then `webpack-dev-server --inline --content-base --port 8081`
-start ethereum node: `testrpc` or  `geth --fast --testnet`
-visit: `http://127.0.0.1:8081/`
+visit: `http://127.0.0.1:8081/` with metamask
 
 ##Dev Setup:
 install truffle: `npm install -g truffle`
